@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Learning Path</title>
+</head>
+<body>
+
+<h1>Personalized Learning Path</h1>
+
+<h2>Your Level: {{ level }}</h2>
+
+<h3>Average Score: {{ average }}</h3>
+
+<h2>Recommended Learning Plan</h2>
+
+<ul>
+{% for item in recommendation %}
+<li>{{ item }}</li>
+{% endfor %}
+</ul>
+
+<a href="/dashboard">
+<button>Back to Dashboard</button>
+</a>
+
+</body>
+</html>
